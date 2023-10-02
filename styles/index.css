@@ -65,8 +65,23 @@ p {
 .flex {
   display: flex;
 }
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex.justify-start {
+  justify-content: flex-start;
+}
 .flex.justify-center {
   justify-content: center;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+.flex.justify-evently {
+  justify-content: space-evenly;
 }
 .flex.align-center {
   align-items: center;
@@ -189,4 +204,202 @@ p {
   left: 0;
   bottom: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%);
+}
+
+.contents-section {
+  margin: 100px 0;
+  padding: 50px 200px;
+}
+.contents-section__header {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.contents-section__header .title, .contents-section__header .subtitle {
+  margin: 10px;
+}
+.contents-section .cards {
+  width: 985px;
+}
+.contents-section .cards .card {
+  background-color: #fff;
+  width: 476px;
+  height: 545px;
+  padding: 40px 0;
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+  text-align: center;
+}
+.contents-section .cards .card__header {
+  background-color: #fff;
+  max-width: 303px;
+  max-height: 152px;
+}
+.contents-section .cards .card__header .title {
+  padding: 10px;
+  color: black;
+}
+.contents-section .cards .card__header .description {
+  padding: 10px;
+  color: #5C5C5C;
+}
+.contents-section .cards .card .button {
+  background-color: #4452FE;
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px 36px;
+}
+.contents-section .cards .card .card1 {
+  width: 405px;
+  height: 227px;
+}
+.contents-section .cards .card .card2 {
+  width: 379px;
+  height: 276px;
+}
+
+.gallery-section {
+  margin: 100px 0;
+  padding: 50px 200px;
+  height: 911px;
+  text-align: center;
+}
+.gallery-section .header {
+  margin-bottom: 0;
+}
+.gallery-section .header .title, .gallery-section .header .description {
+  padding: 10px;
+}
+.gallery-section .button {
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+.gallery-section .content {
+  width: 1100px;
+}
+.gallery-section .content img {
+  height: 285px;
+  border-radius: 10px;
+}
+.gallery-section .content .img-sm {
+  width: 225px;
+}
+.gallery-section .content .img-lg {
+  width: 400px;
+}
+
+.partners-section {
+  padding: 50px 20px;
+  height: 385px;
+  text-align: center;
+}
+.partners-section .header {
+  margin-bottom: 0;
+}
+.partners-section .title, .partners-section .subtitle {
+  padding: 10px;
+}
+.partners-section .content {
+  width: 832px;
+}
+.partners-section .button {
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.testimonials-section {
+  height: 781px;
+  padding: 50px 20px;
+}
+.testimonials-section .content {
+  width: 883px;
+  height: 654px;
+}
+.testimonials-section .content .card {
+  width: 350px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 10px;
+  border: 1px solid #DEDEDE;
+  padding: 40px;
+}
+.testimonials-section .content .card__header {
+  margin-bottom: 30px;
+}
+.testimonials-section .content .card__header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 13px;
+}
+.testimonials-section .content .card__header .title {
+  padding: 0 10px;
+  text-align: left;
+}
+.testimonials-section .content .card .description {
+  width: 338px;
+}
+
+.opentype-section .container {
+  width: 1220px;
+  height: 370px;
+  margin: 100px 0;
+  border-radius: 33px;
+  background: #343434;
+}
+.opentype-section .container .content {
+  padding: 74px;
+}
+.opentype-section .container .content .text {
+  font-size: 52px;
+  line-height: 62px;
+  padding: 0 10px;
+  width: 492px;
+}
+.opentype-section .container .content .button {
+  width: 232px;
+  font-size: 17px;
+  line-height: 25px;
+  background-color: #4452FE;
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px 36px;
+}
+.opentype-section .container img {
+  width: 560px;
+  height: 370px;
+  border-bottom-right-radius: 33px;
+}
+
+footer {
+  padding: 107px 0;
+}
+footer .nav {
+  width: 513px;
+}
+footer .nav .list {
+  width: 121px;
+}
+footer .nav .list .item {
+  margin-bottom: 19px;
+}
+footer .nav .list .item:first-child {
+  margin-bottom: 40px;
+}
+footer .nav .list .item:last-child {
+  margin-bottom: 0;
+}
+footer .contacts {
+  height: 190px;
+}
+footer .contacts .address svg {
+  margin-right: 8px;
+}
+footer .contacts .images svg {
+  margin-right: 24px;
 }/*# sourceMappingURL=index.css.map */
