@@ -13,6 +13,9 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: var(--bg-color);
   color: #fff;
+
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -47,9 +50,9 @@ p {
 
 /* --------------------- */
 
-.logo {
-  margin-right: 136px;
-}
+// .logo {
+//   margin-right: 136px;
+// }
 
 .button {
   border: 1px solid #fff;

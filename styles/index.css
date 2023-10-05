@@ -1,3 +1,7 @@
+/*Max-window*/
+/*Colors*/
+/*Fonts*/
+/*Separators*/
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
 /* -----Variables------- */
 :root {
@@ -11,6 +15,8 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: var(--bg-color);
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -42,10 +48,6 @@ p {
 }
 
 /* --------------------- */
-.logo {
-  margin-right: 136px;
-}
-
 .button {
   border: 1px solid #fff;
   color: #fff;
@@ -90,28 +92,74 @@ p {
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 34px;
-  margin-bottom: 120px;
+  width: 100%;
   background-color: var(--bg-color);
+  padding: 20px 30px;
 }
-.header__inner {
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 15px 25px;
+  }
+}
+.header .context {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
 }
-.header__nav {
-  margin-right: 174px;
-}
-.header__list {
-  display: flex;
-}
-.header__item {
-  margin-right: 30px;
-}
-.header__item:last-child {
-  margin-right: 0;
-}
-.header__link {
+.header .context .logo {
   padding: 10px;
+}
+.header .context nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 395px;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .header .context nav {
+    display: none;
+    width: 0;
+  }
+}
+.header .context nav .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .context nav .list .list-item {
+  padding: 10px;
+}
+.header .context .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+}
+.header .context .buttons .btn-login {
+  padding: 15px 50px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1200px) {
+  .header .context .buttons .btn-login {
+    margin-right: 15px;
+  }
+}
+.header .context .buttons .menu {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .header .context .buttons .menu {
+    display: block;
+    background-color: transparent;
+    width: 66px;
+    height: 53px;
+  }
 }
 
 .features-section {
