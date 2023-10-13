@@ -1,31 +1,65 @@
 .features-section {
   padding-top: 162px;
 
+  @media screen and (max-width: $window-size-lg) {
+    padding: 62px 50px;
+    margin: auto;
+
+    max-width: 454px;
+    margin-bottom: 101px;
+  }
+
   &__title {
     text-transform: uppercase;
 
     text-align: center;
+
+    @media screen and (max-width: $window-size-lg) {
+      font-size: 52px;
+      line-height: 62px;
+      margin-bottom: 27px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 80px;
 
     text-align: center;
+
+    @media screen and (max-width: $window-size-lg) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 27px;
+    }
   }
 
   &__content {
     display: flex;
+    flex-direction: row;
 
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
+
+    @media screen and (max-width: $window-size-lg) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__images {
-    height: 752px;
-    width: 760px;
+    max-height: 752px;
+    max-width: 760px;
+
+    width: 100%;
+    height: 100%;
 
     margin-right: 46px;
 
     position: relative;
+
+    @media screen and (max-width: $window-size-lg) {
+      max-width: 376px;
+    }
   }
 
   &__panel-image {
@@ -35,19 +69,35 @@
 
     height: 696px;
     width: 659px;
+
+
+    @media screen and (max-width: $window-size-lg) {
+      height: 319px;
+      width: 324px;
+    }
   }
 
   &__graphic-image {
     position: absolute;
     bottom: 0;
-    right: 0;
     width: 400px;
     height: 270px;
+
+    @media screen and (max-width: $window-size-lg) {
+      height: 160px;
+      width: 232px;
+      top: 200px;
+      left: 76px;
+    }
   }
 
   &__list {
     width: 100%;
     max-width: 270px;
+
+    @media screen and (max-width: $window-size-lg) {
+      padding-top: 400px;
+    }
 
     &-title {
       font-size: 20px;
