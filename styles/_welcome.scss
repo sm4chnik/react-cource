@@ -1,12 +1,31 @@
 .welcome-section {
     position: relative;
     text-align: center;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $window-size-lg) {
+      margin-bottom: 101px;
+    }
   
     &__title {
       margin-bottom: 28px;
   
       font-size: 80px;
       line-height: 88px;
+
+      @media screen and (max-width: $window-size-lg) {
+        font-size: $fsz-lg;
+        line-height: 62px;
+        width: 100%;
+        max-width: 382px;
+
+        padding: $separator-10;
+        margin: 0;
+        margin-bottom: 7px;
+      }
     }
   
     &__subtitle {
@@ -14,17 +33,39 @@
     
       font-size: 20px;
       line-height: 30px;
+
+      @media screen and (max-width: $window-size-lg) {
+        font-size: $fsz-mg;
+        line-height: 30px;
+        width: 100%;
+        max-width: 402px;
+        margin: 0;
+        margin-bottom: 57px;
+      }
     }
   
     &__links {
       display: flex;
+      flex-direction: row;;
       justify-content: center;
       margin-bottom: 36px;
+
+      @media screen and (max-width: $window-size-lg) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   
     &__link {
       &:first-child {
         margin-right: 36px;
+        background-color: $btn-bgc;
+        border-color: $bg-color-main;
+
+        @media screen and (max-width: $window-size-lg) {
+          margin: 0;
+          margin-bottom: 21px;
+        }
       }
     }
   

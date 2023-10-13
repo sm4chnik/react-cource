@@ -3,7 +3,6 @@
   justify-content: center;
 
   width: 100%;
-  
 
   background-color: var(--bg-color);
 
@@ -11,6 +10,7 @@
 
   @media screen and (max-width: $window-size-lg) {
     padding: $separator-15 $separator-25;
+    margin-bottom: $separator-55;
   }
 
   .context {
