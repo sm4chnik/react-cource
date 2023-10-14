@@ -1,12 +1,25 @@
 .partners-section {
     padding: 50px 20px;
     
-    height: 385px;
+    max-height: 385px;
+    height: 100%;
+    width: 100%;
 
     text-align: center;
 
+    @media screen and (max-width: $window-size-lg) {
+        max-width: 510px;
+        margin: auto;
+        margin-bottom: 101px;
+
+    }
+
     .header {
         margin-bottom: 0;
+
+        @media screen and (max-width: $window-size-lg) {
+            margin-bottom: 50px;
+        }
     }
 
     .title, .subtitle {
@@ -14,7 +27,23 @@
     }
 
     .content {
-        width: 832px;
+        width: 100%;
+        max-width: 832px;
+
+        @media screen and (max-width: $window-size-lg) {
+            max-width: 350px;
+            flex-wrap: wrap;
+
+            margin-bottom: 50px;
+        }
+
+        svg {
+            @media screen and (max-width: $window-size-lg) {
+                margin: 0 25px;
+
+                max-width: 63px;
+            }
+        }
     }
 
     .button {
