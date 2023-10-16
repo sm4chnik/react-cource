@@ -165,13 +165,15 @@ p {
 
 .features-section {
   padding-top: 162px;
+  height: 100%;
+  max-height: 1000px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 1200px) {
   .features-section {
     padding: 62px 50px;
     margin: auto;
     max-width: 454px;
-    margin-bottom: 101px;
   }
 }
 .features-section__title {
@@ -199,8 +201,10 @@ p {
 .features-section__content {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   max-width: 1100px;
+  margin: auto;
 }
 @media screen and (max-width: 1200px) {
   .features-section__content {
@@ -222,7 +226,6 @@ p {
   }
 }
 .features-section__panel-image {
-  position: absolute;
   left: 28px;
   top: 0;
   height: 696px;
@@ -237,6 +240,7 @@ p {
 .features-section__graphic-image {
   position: absolute;
   bottom: 0;
+  right: 0;
   width: 400px;
   height: 270px;
 }
@@ -483,6 +487,7 @@ p {
   max-width: 1100px;
   width: 100%;
   align-items: center;
+  margin-bottom: 44px;
 }
 @media screen and (max-width: 1200px) {
   .gallery-section .content {
@@ -533,12 +538,21 @@ p {
   }
 }
 .partners-section .header {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 1200px) {
   .partners-section .header {
     margin-bottom: 50px;
   }
+}
+.partners-section .header .title, .partners-section .header .description {
+  padding: 10px;
+}
+.partners-section .header .title {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62px;
 }
 .partners-section .title, .partners-section .subtitle {
   padding: 10px;
@@ -546,6 +560,7 @@ p {
 .partners-section .content {
   width: 100%;
   max-width: 832px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 1200px) {
   .partners-section .content {
@@ -570,12 +585,25 @@ p {
 }
 
 .testimonials-section {
-  height: 781px;
+  height: 100%;
   padding: 50px 20px;
 }
+.testimonials-section h2 {
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57px;
+}
 .testimonials-section .content {
-  width: 883px;
-  height: 654px;
+  width: 100%;
+  max-width: 883px;
+}
+@media screen and (max-width: 1200px) {
+  .testimonials-section .content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+  }
 }
 .testimonials-section .content .card {
   width: 350px;
@@ -584,6 +612,7 @@ p {
   border-radius: 10px;
   border: 1px solid #DEDEDE;
   padding: 40px;
+  margin-bottom: 23px;
 }
 .testimonials-section .content .card__header {
   margin-bottom: 30px;
@@ -602,20 +631,45 @@ p {
 }
 
 .opentype-section .container {
-  width: 1220px;
-  height: 370px;
+  max-width: 1220px;
+  width: 100%;
+  max-height: 370px;
+  height: 100%;
   margin: 100px 0;
   border-radius: 33px;
   background: #343434;
 }
+@media screen and (max-width: 1200px) {
+  .opentype-section .container {
+    max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    background-color: transparent;
+    margin-bottom: 100px;
+  }
+}
 .opentype-section .container .content {
   padding: 74px;
+}
+@media screen and (max-width: 1200px) {
+  .opentype-section .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .opentype-section .container .content .text {
   font-size: 52px;
   line-height: 62px;
   padding: 0 10px;
   width: 492px;
+}
+@media screen and (max-width: 1200px) {
+  .opentype-section .container .content .text {
+    margin-bottom: 37px;
+  }
 }
 .opentype-section .container .content .button {
   width: 232px;
@@ -630,15 +684,48 @@ p {
   height: 370px;
   border-bottom-right-radius: 33px;
 }
+@media screen and (max-width: 1200px) {
+  .opentype-section .container img {
+    border-bottom-right-radius: 0;
+  }
+}
 
 footer {
   padding: 107px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+  }
 }
 footer .nav {
-  width: 513px;
+  max-width: 513px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1200px) {
+  footer .nav {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer .nav .list {
   width: 121px;
+}
+@media screen and (max-width: 1200px) {
+  footer .nav .list {
+    margin-bottom: 75px;
+  }
 }
 footer .nav .list .item {
   margin-bottom: 19px;
@@ -650,7 +737,18 @@ footer .nav .list .item:last-child {
   margin-bottom: 0;
 }
 footer .contacts {
-  height: 190px;
+  max-height: 190px;
+  height: 100%;
+  max-width: 322px;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  footer .contacts {
+    max-height: 500px;
+  }
+}
+footer .contacts .address {
+  margin-bottom: 10px;
 }
 footer .contacts .address svg {
   margin-right: 8px;

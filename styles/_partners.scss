@@ -15,10 +15,21 @@
     }
 
     .header {
-        margin-bottom: 0;
+        margin-bottom: 50px;
 
         @media screen and (max-width: $window-size-lg) {
             margin-bottom: 50px;
+        }
+
+        .title, .description {
+            padding: 10px;
+        }
+
+        .title {
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 62px;
         }
     }
 
@@ -29,6 +40,7 @@
     .content {
         width: 100%;
         max-width: 832px;
+        margin-bottom: 50px;
 
         @media screen and (max-width: $window-size-lg) {
             max-width: 350px;

@@ -1,15 +1,34 @@
 .opentype-section {
     .container {
-        width: 1220px;
-        height: 370px;
+        max-width: 1220px;
+        width: 100%;
+        max-height: 370px;
+        height: 100%;
 
         margin: 100px 0;
     
         border-radius: 33px;
         background: #343434;
 
+        @media screen and (max-width: $window-size-lg) {
+            max-height: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 0;
+            background-color: transparent;
+
+            margin-bottom: 100px;
+        }
+
         .content {
             padding: 74px;
+
+            @media screen and (max-width: $window-size-lg) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
             .text {
                 font-size: 52px;
@@ -17,6 +36,10 @@
                 padding: 0 10px;
 
                 width: 492px;
+
+                @media screen and (max-width: $window-size-lg) {
+                    margin-bottom: 37px;
+                }
             }
 
             .button {
@@ -37,6 +60,10 @@
             height: 370px;
 
             border-bottom-right-radius: 33px;
+
+            @media screen and (max-width: $window-size-lg) {
+                border-bottom-right-radius: 0;
+            }   
         }
     }
 
